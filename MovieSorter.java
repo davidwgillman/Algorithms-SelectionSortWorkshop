@@ -17,14 +17,15 @@ class MovieSorter {
 		try {
 			N = Integer.parseInt(args[1]);
 	    	MovieScoreArrayReader ar = new MovieScoreArrayReader(filename);
-    		movies = ar.read(N);    
+    		movies = ar.read(N);
     	} catch (Throwable e) {
     		System.out.println("Error building movie array.");
-    	}		
+    	}
 
 		Stopwatch stopwatch = new Stopwatch();
-		// insert code
+		Selection.sort(movies);
 		double time = stopwatch.elapsedTime();
+		System.out.println(time);
 	}
 
 }
