@@ -1,5 +1,6 @@
 /* A class for comparing movies by IMDb score 
 */
+import java.lang.*;
 
 public class MovieScore implements Comparable<MovieScore> {
 	private final String title;
@@ -19,7 +20,17 @@ public class MovieScore implements Comparable<MovieScore> {
 	}
 
 	public int compareTo(MovieScore that) {
-		// implement this method
+		if (this.getScore() > that.getScore()) {
+			return 1;
+		} 
+		if (this.getScore() < that.getScore()) {
+			return -1;
+		} 
+		return 0;
+	}
+
+	public String toString() {
+		return getTitle() +", "+ getScore();
 	}
 
 	public static void main(String[] args) {
