@@ -20,8 +20,16 @@ public class MovieScore implements Comparable<MovieScore> {
 
 	public int compareTo(MovieScore that) {
 		// implement this method
+		if (this.getScore() < that.getScore()) {
+                    return 1;
+		} else if (this.getScore() > that.getScore()) {
+			return 2;
+		} else if (this.getScore() == that.getScore()) {
+			return 0;
+		}
+		//if none of the above return 4
+		return 4;	
 	}
-
 	public static void main(String[] args) {
 		MovieScore movie = new MovieScore("Alien", 3.0);
 		System.out.println(movie.getTitle() + ", " + movie.getScore());
