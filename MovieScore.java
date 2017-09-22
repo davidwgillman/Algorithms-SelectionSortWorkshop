@@ -20,6 +20,15 @@ public class MovieScore implements Comparable<MovieScore> {
 
 	public int compareTo(MovieScore that) {
 		// implement this method
+		if (score < that.getScore()){
+		    return -1;
+		}
+		else if(score > that.getScore()){
+		    return 1;
+		}
+		else{ 
+		    return 0;
+		}
 	}
 
 	public static void main(String[] args) {

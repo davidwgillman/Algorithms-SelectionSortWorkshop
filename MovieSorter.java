@@ -24,6 +24,7 @@ class MovieSorter {
 
 		Stopwatch stopwatch = new Stopwatch();
 		// insert code
+		Selection.sort(movies);
 		double time = stopwatch.elapsedTime();
 	}
 
