@@ -20,7 +20,7 @@ public class MovieScore implements Comparable<MovieScore> {
 
 	public int compareTo(MovieScore that) {
 		// implement this method
-		return this.getScore.compareTo(that.getScore());
+		return this.getScore().compareTo(that.getScore());
 
 	}
 
