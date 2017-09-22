@@ -23,7 +23,18 @@ class MovieSorter {
     	}		
 
 		Stopwatch stopwatch = new Stopwatch();
-		// insert code
+		for(int i = 0; i<movies.length-1; i++) {
+          int current = i;
+          for(int j = i+1; j<movies.length; j++){
+              if (movies[current].compareTo(movies[j]) == 1){
+                 current = j;
+              }             
+          }
+            MovieScore temp = movies[current];
+            movies[current] = movies[i];
+            movies[i] = temp;
+        }
+
 		double time = stopwatch.elapsedTime();
 	}
 
