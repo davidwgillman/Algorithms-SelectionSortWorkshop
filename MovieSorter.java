@@ -3,8 +3,8 @@
    Usage:  MovieSorter <filename> <number>
 */
 import java.lang.Throwable;
-import edu.princeton.cs.algs4.Stopwatch;
-import edu.princeton.cs.algs4.Selection;
+
+import com.sun.xml.internal.ws.api.client.SelectOptimalEncodingFeature;
 
 class MovieSorter {
 	public static void main(String[] args) {
@@ -23,8 +23,9 @@ class MovieSorter {
     	}		
 
 		Stopwatch stopwatch = new Stopwatch();
-		// insert code
+		Selection.sort(movies);
 		double time = stopwatch.elapsedTime();
+		System.out.println(time);
 	}
 
 }
