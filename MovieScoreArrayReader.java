@@ -29,7 +29,7 @@ public class MovieScoreArrayReader {
     }
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
-    	MovieScoreArrayReader ar = new MovieScoreArrayReader("Data/movie_title_score.random.csv");
+    	MovieScoreArrayReader ar = new MovieScoreArrayReader("movie_title_score.random.csv");
     	MovieScore[] movies = null;
     	movies = ar.read(10);    		
     	for (MovieScore m: movies) {
