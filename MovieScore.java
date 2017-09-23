@@ -20,9 +20,9 @@ public class MovieScore implements Comparable<MovieScore> {
 
 	public int compareTo(MovieScore that) {
 		// implement this method
-        if (this.score == that.score) {
+        if (this.getScore() == that.getScore()) {
             return 0;
-        } else if (this.score < that.score) {
+        } else if (this.getScore() < that.getScore()) {
             return 1;
         } else {
             return -1;

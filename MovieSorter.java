@@ -28,7 +28,7 @@ class MovieSorter {
         for (int i = 0; i < movies.length-1; i++) {
             int min = i;
             for (int j = i+1; j < movies.length; j++) {
-                if (movies[j].compareTo(movies[min]) == 1) {
+                if (movies[min].compareTo(movies[j]) == 1) {
                     min = j;
                 }
             }
