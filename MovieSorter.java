@@ -12,8 +12,10 @@ class MovieSorter {
    		MovieScore[] movies = null;
 
    		//Setting the arguments manually so that I can easily run this in Eclipse
-   		args[0]="movie_title_score.random.csv";
-   		args[1]="10";
+   		args=new String[2];
+   		args[0]="Data/movie_title_score.random.csv";
+   		args[1]="15000";
+   		System.out.println("Sorting "+args[1]+" movies from "+args[0]);
    		
 		// parse the arguments
 		String filename = args[0];
@@ -27,9 +29,10 @@ class MovieSorter {
     	}		
 
 		Stopwatch stopwatch = new Stopwatch();
-		// insert code
-		
+		Selection.sort(movies);
 		double time = stopwatch.elapsedTime();
+		System.out.println("Sort took "+time+" seconds!");
+		System.out.println(time);
 	}
 
 }
