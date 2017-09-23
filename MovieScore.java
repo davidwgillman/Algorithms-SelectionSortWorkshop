@@ -25,7 +25,7 @@ public class MovieScore implements Comparable<MovieScore> {
         } else if (this.score < that.score) {
             return 1;
         } else {
-            return -1
+            return -1;
         }
 	}
 
