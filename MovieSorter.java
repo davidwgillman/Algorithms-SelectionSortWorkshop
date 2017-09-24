@@ -3,6 +3,7 @@
    Usage:  MovieSorter <filename> <number>
 */
 import java.lang.Throwable;
+
 import edu.princeton.cs.algs4.Stopwatch;
 import edu.princeton.cs.algs4.Selection;
 
@@ -24,7 +25,9 @@ class MovieSorter {
 
 		Stopwatch stopwatch = new Stopwatch();
 		// insert code
+        Selection.sort(movies);
 		double time = stopwatch.elapsedTime();
+        System.out.println("Took " + time);
 	}
 
 }
