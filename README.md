@@ -12,3 +12,10 @@ Selection Sort was used on three .csv files of movies, ranked by IMDb scores. On
 
 ## Sorted dataset
 ![Sorted dataset](https://image.ibb.co/mNfcik/sorted_runtime.png)
+
+## Rate of Growth Analysis
+We can tell from the graphs that runtimes for Selection Sort do not have a linear rate of growth. The bigger the input size, the longer the runtime; when input size doubles, the program takes more than twice the amount of time to run. 
+
+For all the datasets, the **runtime increases by an approximate factor of n^2** (N = 2000 -> N = 4000 grows by 2x, N = 4000 -> N = 8000 grows by 4x, N = 8000 -> N = 16000 grows by 8x, etc). 
+
+The sorted dataset takes less time overall to be "re-sorted", but its runtime still grows at the same rate as the other two datasets' runtimes. 
