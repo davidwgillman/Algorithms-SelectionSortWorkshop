@@ -47,5 +47,4 @@ class MovieSorter {
 		double time = stopwatch.elapsedTime();
         System.out.println("Time passed: " + time);
 	}
-
 }
