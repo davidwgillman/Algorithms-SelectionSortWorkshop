@@ -26,16 +26,24 @@ class MovieSorter {
 		// insert code
         
         for (int i = 0; i < movies.length-1; i++) {
+            // Finding minimum element
             int min = i;
+            
+            // Iterate through rest of list and compare minimums
             for (int j = i+1; j < movies.length; j++) {
                 if (movies[min].compareTo(movies[j]) == 1) {
                     min = j;
                 }
             }
+            
+            // Swap with old element at index i
+            // Makes sorted portion of the array
             MovieScore tempMovieScore = movies[min];
             movies[min] = movies[i];
             movies[i] = tempMovieScore;
         }
+        
+        // Logs how long the process took
 		double time = stopwatch.elapsedTime();
         System.out.println("Time passed: " + time);
 	}
